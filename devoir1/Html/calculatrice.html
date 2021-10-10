@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculatrice</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie-edge"/>
+    <link rel="stylesheet" href="../Css/calculate.css"/>
+  </head>
+
+  <body background="../Images/calculator.jpg">
+              <center><h1 class="text2">Web Calculator</h1></center>
+	
+        <div class="calculateBox">
+            <div class="box">
+            <form method="post" action="../php/webCalc.php">
+                <div class="form-element">
+                    <label for="op1">Entrez la premiere operande : </label>
+                    <input type="number" name="operande1" id="op1" required/>    
+                </div>
+                
+                <div class="form-element">
+                    <label for="operateur">Choississez l'operateur : </label>
+                    <select id="operateur" name="listOperateur">
+                        <option value="addition">+</option>
+                        <option value="soustraction">-</option>
+                        <option value="multiplication">*</option>
+                        <option value="division">/</option>
+                    </select>
+                </div>
+                <div class="form-element">
+                    <label for="op2">Entrez la seconde operande : </label>
+                    <input type="number" name="operande2" id="op2" required/>   
+                </div>
+                <div class="form-button">
+                    <input type="submit" name="valider" value="Calculer"/>
+                    <input type="reset" name="reset" value="Effacer"/>
+                </div>
+                
+            </form>
+            <div class="result">
+                <p style="font-size: 0.5em;"></p>    
+            </div>
+            </div>
+            </div>
+     
+    </body>
+</html>

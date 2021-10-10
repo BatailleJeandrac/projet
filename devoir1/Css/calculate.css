@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "lato";
+    src: url('../font/lato/Lato-Regular.ttf');
+}
+@font-face {
+    font-family: "roboto";
+    src: url('../font/roboto/Roboto-Regular.ttf');
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'roboto';
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+.calculateBox{
+    width:100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../Images/calculator.jpg");
+    background-size: cover;
+}
+.calculateBox .box{
+    height: 300px;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 2px;
+    background: darkgray;
+}
+form input[type="text"]{
+    width: 40%;
+    height: 30px;
+    border: 1px solid #a79793;
+    border-radius: 3px;
+}
+.form-element label[for="operateur"]{
+    margin-right: 37px;
+}
+.form-element{
+    margin-bottom: 25px;
+}
+.form-button{
+    text-align: right;
+}
+.form-button input{
+    padding: 10px;
+    background: white;
+    border: 1px solid #e94c26;
+    border-radius: 10px;
+    color: #e94c26;
+}
+.form-element label{
+    font-family: 'roboto';
+    font-size: 0.8em;
+    color:  white;
+}
+.result{
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    margin-top: 30px;
+    border: 1px solid #e94c26;
+    border-radius: 10px;
+    background-color: azure;
+}
+@media screen and (max-width : 760px){
+      .header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+     .appMobile p{
+        font-size: 0.6em;
+      }
+      .imgs{
+        display: flex;
+      }
+}
